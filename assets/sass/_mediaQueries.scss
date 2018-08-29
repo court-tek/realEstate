@@ -1,0 +1,95 @@
+// Media Queries
+@include mediaLg {}
+// Tablets & Small laptops
+/* max-width: 769px */
+@include mediaMd {
+  // Header
+  header {
+    nav {
+      // display: none;
+    }
+  }
+  // Header
+  #content-area {
+    // Filter
+    #filter {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      float: none;
+      left: 0;
+      top: 0;
+      right: 0;
+      .inside {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        h4 {
+          display: none;
+        }
+        .home {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .homeType {
+            display: none;
+          }
+          .city {
+            margin: 0 5px 14px;
+            width: 55%;
+          }
+          .bedrooms {
+            margin: 0 5px 14px;
+            width: 55%;
+          }
+        }
+        .filters {
+          margin: 0 auto;
+          width: 400px;
+          .title{
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 1rem;
+            color: $darkgrey;
+          }
+
+          input {
+            width: 47%;
+          }
+          &.extras {
+            display: none;
+          }
+        }
+      }
+    }
+
+    // Listings
+    #Listings {
+      width: 100%;
+      float: none;
+      margin: 0 auto;
+      .search-area {
+        input[type='text']{
+          width: 100%;
+        }
+      }
+    }
+    // Listings
+  }
+}
+// Smartphones
+/* max-width: 500px */
+@include mediaSm {
+  // Header
+  header {
+    nav {
+      display: none;
+    }
+  }
+  // Header
+}
